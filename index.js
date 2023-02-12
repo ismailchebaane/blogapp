@@ -27,8 +27,7 @@ app.use(express.static("public"));
 
 
 
-const uri=
-"mongodb+srv://ismailchebaane:ismailchebaane@cluster0.oqucmgy.mongodb.net/?retryWrites=true&w=majority";
+const uri=process.env.URL;
 
 
 mongoose.connect(uri, function(err) {
